@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Main
 {
-    public static final String SNIPER_STATUS_NAME = "SNIPER_STATUS_NAME";
+    public static final String MAIN_WINDOW_NAME = "Auction Sniper Main";
     public static final String STATUS_JOINING = "JOINING";
     public static final String STATUS_LOST = "LOST";
 
