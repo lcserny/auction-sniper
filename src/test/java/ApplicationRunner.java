@@ -7,6 +7,7 @@ public class ApplicationRunner
 {
     public static final String SNIPER_ID = "sniper";
     public static final String SNIPER_PASSWORD = "sniper";
+
     private AuctionSniperDriver driver;
 
     public void startBiddingIn(final FakeAuctionServer auction) {
@@ -22,6 +23,7 @@ public class ApplicationRunner
         };
         thread.setDaemon(true);
         thread.start();
+
         driver = new AuctionSniperDriver(1000);
         driver.showSniperStatus(STATUS_JOINING);
     }
