@@ -1,7 +1,7 @@
 import net.cserny.tdd.auctionSniper.ui.Main;
 
-import static net.cserny.tdd.auctionSniper.ui.Main.STATUS_JOINING;
-import static net.cserny.tdd.auctionSniper.ui.Main.STATUS_LOST;
+import static net.cserny.tdd.auctionSniper.ui.MainWindow.STATUS_JOINING;
+import static net.cserny.tdd.auctionSniper.ui.MainWindow.STATUS_LOST;
 
 public class ApplicationRunner
 {

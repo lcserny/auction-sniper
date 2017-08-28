@@ -6,11 +6,13 @@ import javax.swing.border.LineBorder;
 import java.awt.*;
 
 import static net.cserny.tdd.auctionSniper.ui.Main.MAIN_WINDOW_NAME;
-import static net.cserny.tdd.auctionSniper.ui.Main.STATUS_JOINING;
 
 public class MainWindow extends JFrame
 {
     public static final String SNIPER_STATUS_NAME = "sniper status";
+    public static final String STATUS_JOINING = "JOINING";
+    public static final String STATUS_LOST = "LOST";
+
     private final JLabel sniperStatus = createLabel(STATUS_JOINING);
 
     private JLabel createLabel(String initialText) {
@@ -27,5 +29,9 @@ public class MainWindow extends JFrame
         pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
+    }
+
+    public void showStatus(String statusText) {
+        sniperStatus.setText(statusText);
     }
 }
